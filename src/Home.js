@@ -1,15 +1,21 @@
 import React from 'react';
-import Nav from './Nav';
-import logo from './images/flower.jpg';
+import Movie from './images/movie1.jpg'
+
 //component
 function Home(){
    
     return(
         <div>
-            <Nav/>
-           
-            <h1 style={{backgroundColor:"lightcoral"}}>Home page</h1>
-            <img src={logo}  style={{width:"400px",height:"400px"}} alt="Logo" />
+           <div style={{backgroundColor: "black"}}>
+    <hgroup style={{float: "left",marginLeft: "400px "}}>
+        
+        <h2 style={{backgroundColor: "black", color: "white",   fontFamily: "Courier New, monospace"}}>EAT POPCORN</h2> 
+        <h2 style={{backgroundColor: "white", color: "black",  fontFamily: "Courier New, monospace"}}>WATCH MOVIES</h2> 
+        <h2 style={{backgroundColor: "black", color: "white",   fontFamily: "Courier New, monospace"}}>IGNORE THE WORLD</h2>  
+    </hgroup>
+        <img src={Movie} style={{float: "center",height:"150px",width:"150px"}} alt="movie"/>
+        </div>
+
         </div>
     )
 }
